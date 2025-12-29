@@ -1,0 +1,64 @@
+#config version info <char>
+version=20221229
+
+#cali config <short>
+cali_config=0x0
+
+#frequency offset <char>
+freq_offset=0
+htemp_freq_offset=4
+
+#cca ed detect mode
+cca_ed_det=0
+
+#p212 tssi offset cfg <char>
+
+#wf2g spur remove enable cfg <char>
+wf2g_spur_rmen=0
+spur_freq=24478
+
+#rf count<unsigned char>
+rf_count=2
+
+#scan report country ie <char>
+country_ie_report=0
+
+#tssi_ratio_limit =[on=1/off=0],[2g_ratio,],[5g_ratio]
+wftx_tssi_ratio_limit=1,100,133
+digital_code_gain_limit=1,0x0,0xff,0x0,0xff
+
+
+#config 2g channel bandwidth [0]:20/40Mhz [1]:20Mhz only
+channel_2g_20Mhz_only=0
+#scan abort when TP test
+scan_abort_enable=1
+scan_interval_thr=22
+
+#wifi 2g/5g tx power table
+wftx_pwrtbl_en=1
+
+#efuse value <int32>
+#efuse_9=0x00ff0000
+#efuse_a=0x00000000
+#efuse_b=0x00000000
+#efuse_c=0x00000000
+#efuse_d=0x00000000
+#efuse_e=0x00000000
+
+##0:11b(1,2) 1: 11b(5.5,11) 2:11a/g(6~12) 3:11a/g(18~36) 4:11a/g(48) 5:11a/g(54)
+##6:11n(MCS0~2) 7:11n(MCS3~5) 8:11n(MCS6) 9:11n(MCS7) 10:11ac(MCS0~2)
+##11:11ac(MCS3~5) 12:11ac(MCS6) 13:11ac(MCS7) 14:11ac(MCS8) 15:11ac(MCS9)
+wf2g_20M_pwr_tbl=0x62,0x62,0x72,0x64,0x5F,0x5F,0x72,0x62,0x5C,0x5C,0xdb,0xc8,0xa8,0x96,0x82,0x64
+wf2g_40M_pwr_tbl=0x70,0x62,0x8B,0x7A,0x5F,0x5F,0x96,0x86,0x7B,0x6B,0x7C,0x75,0x6C,0x66,0x5D,0x64
+wf5g_20M_pwr_tbl=0x70,0x62,0x95,0x85,0x7B,0x74,0x91,0x84,0x78,0x74,0x91,0x84,0x74,0x6b,0x5f,0x64
+wf5g_40M_pwr_tbl=0x70,0x62,0x8C,0x9B,0x7B,0x7E,0xab,0x96,0x90,0x8D,0xab,0x98,0x80,0x76,0x6a,0x64
+wf5g_80M_pwr_tbl=0x70,0x62,0x8C,0x9B,0x7B,0x7E,0x9C,0x9E,0x90,0x8D,0xa6,0x96,0x86,0x79,0x6a,0x64
+
+ce_band_pwr_tbl=0,0,0,0x35
+ce_pwr_coefficient=100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100
+
+fcc_band_pwr_tbl=0,0,0,0
+fcc_pwr_coefficient=100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100
+
+arib_band_pwr_tbl=0,0,0,0
+arib_pwr_coefficient=100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100
